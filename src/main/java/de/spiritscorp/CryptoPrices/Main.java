@@ -3,7 +3,7 @@ package de.spiritscorp.CryptoPrices;
 /*
  * @author Tom Spirit
  * @date 31.12.2021
- * @version	1.0.0.0
+ * @version	1.0.1.0
  */
 
 /*

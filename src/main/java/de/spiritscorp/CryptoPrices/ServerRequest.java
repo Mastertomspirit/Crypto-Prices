@@ -31,7 +31,7 @@ public class ServerRequest {
 	private JSONArray jo;
 	private String[] args;
 	private String[] coinPair = new String[] {
-			"ETHEUR", "ADAEUR", "TRXEUR", "GRTEUR", "XLMEUR", "MATICEUR", "EURUSDT", "AMPUSDT", "SANDUSDT", "IOTXUSDT", "KEYUSDT", "FETUSDT", 	
+			"ETHEUR", "ADAEUR", "TRXEUR", "GRTEUR", "XLMEUR", "MATICEUR", "EURUSDT", "AMPUSDT", "SANDUSDT", "IOTXUSDT", "KEYUSDT", "FETUSDT", "SUIEUR", "CHZEUR" 	
 		};
 	
 	ServerRequest(String[] args){
