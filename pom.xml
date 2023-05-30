@@ -1,36 +1,48 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>de.spiritscorp</groupId>
-  <artifactId>CryptoPrices</artifactId>
-  <version>1</version>
-  <name>CryptoPrices</name>
-  <description>Holt sich die aktuellen Crypto Preise und speichert sie als json</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.spiritscorp</groupId>
+	<artifactId>CryptoPrices</artifactId>
+	<version>1.0.1.0</version>
+	<name>CryptoPrices</name>
+	<description>Holt sich die aktuellen Crypto Preise und speichert sie als
+		json</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
-		<sourceDirectory>src/main/Main</sourceDirectory>
+		<directory>target</directory>
+		<outputDirectory>target/classes</outputDirectory>
+		<testOutputDirectory>target/test-classes</testOutputDirectory>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
 		<resources>
 			<resource>
-				<directory>src/resources/</directory>
+				<directory>src/main/resources</directory>
 			</resource>
 		</resources>
+		<testResources>
+			<testResource>
+				<directory>src/test/resources</directory>
+			</testResource>
+		</testResources>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
+				<version>3.9.0</version>
 				<configuration>
-					<release>13</release>
+					<release>16</release>
 				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.0.2</version>
+				<version>3.2.2</version>
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>de.spiritscorp.CryptoPrices</mainClass>
+							<mainClass>de.spiritscorp.CryptoPrices.Main</mainClass>
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
 							<addClasspath>true</addClasspath>
