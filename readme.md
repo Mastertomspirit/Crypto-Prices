@@ -21,5 +21,5 @@ Own CoinPairs can be called up via parameters, otherwise the standard list is ca
 <br>
 
 <code>
-Java compiler v13 required.  
+Java compiler v16 required.  
 </code>  
